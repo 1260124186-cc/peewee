@@ -105,6 +105,11 @@ try:
 except ImportError:
     print('Unable to import sqlite extension tests, skipping.')
 try:
+    from . import fts_cutover
+    MODULES.append(fts_cutover)
+except ImportError:
+    print('Unable to import fts cutover tests, skipping.')
+try:
     from . import sqlite_changelog
     MODULES.append(sqlite_changelog)
 except ImportError:
