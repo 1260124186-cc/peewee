@@ -72,6 +72,8 @@ from . import kv
 MODULES.append(kv)
 from . import migrations
 MODULES.append(migrations)
+from . import model_versioning
+MODULES.append(model_versioning)
 from . import mysql_ext
 MODULES.append(mysql_ext)
 from . import pool
