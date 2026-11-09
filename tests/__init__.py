@@ -68,6 +68,8 @@ try:
     MODULES.append(json_field)
 except NotSupportedError:
     print('Unable to import json_field tests, requires sqlite >= 3.38.')
+from . import json_patch
+MODULES.append(json_patch)
 from . import kv
 MODULES.append(kv)
 from . import migrations
