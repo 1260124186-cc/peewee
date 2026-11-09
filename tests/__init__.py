@@ -51,6 +51,8 @@ from . import db_url
 MODULES.append(db_url)
 from . import extra_fields
 MODULES.append(extra_fields)
+from . import generation_cutover
+MODULES.append(generation_cutover)
 try:
     from . import flask_utils
     MODULES.append(flask_utils)
